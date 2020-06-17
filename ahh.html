@@ -38,6 +38,15 @@ var observer = new IntersectionObserver(function(entries) {
 }, { threshold: [0] });
 
 observer.observe(document.querySelector(".mytarget"));
+	
+	/* to add it in all elements 
+	
+	var targets = [Array.from(document.querySelectorAll('.zopry')), Array.from(document.querySelectorAll('.zopry'))].flat();
+
+    targets.forEach(target => 
+        observer.observe(target));
+	
+	*/
 }
 
 
