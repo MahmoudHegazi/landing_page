@@ -33,7 +33,7 @@ var observer = new IntersectionObserver(function(entries) {
 	// isIntersecting is true when element and viewport are overlapping
 	// isIntersecting is false when element and viewport don't overlap
 	if(entries[0].isIntersecting === true)
-		alert(entries[0].target + "fuk you all mother fuckkers");
+		alert(entries[0].target);
 	        /* entries[0].target.style.color = "green"; */
 	 /* فكك من ازاي تشيل الكلاس من العنصر لما تخرج شيل اي اكتف من بقيت العناصر وادي التارجت اكتف */
 }, { threshold: [0] });
@@ -42,7 +42,7 @@ observer.observe(document.querySelector(".mytarget"));
 	
 	/* to add it in all elements 
 	
-	var targets = [Array.from(document.querySelectorAll('.zopry')), Array.from(document.querySelectorAll('.zopry'))].flat();
+	var targets = [Array.from(document.querySelectorAll('.csss')), Array.from(document.querySelectorAll('.csss'))].flat();
 
     targets.forEach(target => 
         observer.observe(target));
