@@ -26,6 +26,32 @@
 <p id="demo"></p>
 
 <script>
+	
+	
+/* give it try
+// Set section and nav link as active using the IntersectionObserver pattern
+const callback = entries => {
+entries.forEach(entry => {
+const navListElement = document.querySelector(
+.menu__link[data-link='${entry.target.id}'],
+)
+const section = document.getElementById(entry.target.id)
+
+if (entry && entry.isIntersecting) {
+  navListElement.classList.add('active')
+  section.classList.add('active')
+} else {
+  if (navListElement.classList.contains('active')) {
+    navListElement.classList.remove('active')
+  }
+
+  if (section.classList.contains('active')) {
+    section.classList.remove('active')
+  }
+}
+
+
+*/
 
 function myFunction() {
 
